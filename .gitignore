@@ -102,6 +102,5 @@ ENV/
 
 # excluding datasets and models
 all_tickets.csv
-*.model
 .vscode
 
