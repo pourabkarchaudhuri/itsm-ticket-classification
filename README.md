@@ -34,21 +34,6 @@ In this repository we will focus only on AML Workbench and Python scripts used t
 - How to leverage [Azure Machine Learning Services](https://azure.microsoft.com/en-us/services/machine-learning-services/) and [AML Workbench](https://docs.microsoft.com/en-us/azure/machine-learning/preview/quickstart-installation) to make working on ML projects easier, faster and much more efficient
 
 
-#### The team: ####
-- [Karol Żak](https://twitter.com/karolzak13) ([GitHub](https://github.com/karolzak)) - Software Development Engineer, Microsoft
-- [Filip Glavota](https://twitter.com/fglavota) - Software Development Engineer, Microsoft
-- [Ionut Mironica](https://www.linkedin.com/in/ionut-mironica-06b35a2a/) ([GitHub](https://github.com/imironica)) - Senior Developer, Endava 
-- [Bogdan Dinu](https://www.linkedin.com/in/bogdanvdinu) - Senior Development Consultant, Endava
-- [Bogdan Marin](www.linkedin.com/in/bogdanmmarin) ([GitHub](https://github.com/bogdanm-marin)) - Senior Developer, Endava 
-- [Florin Vinca](https://www.linkedin.com/in/vinca-florin-442ba229/) - Senior Developer, Endava
-- Ioana Raducanu - BI Analyst Developer, Endava
-- [Andreea Tipau](https://www.linkedin.com/in/andreea-tipau-309aa1124/) - Developer, Endava
-
-![](docs/endava_team.jpg)
-
-
-<br>
-
 # 2. Results and learnings
 [[back to the top]](#table-of-contents)
 
