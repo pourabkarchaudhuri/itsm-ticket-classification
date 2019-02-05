@@ -14,6 +14,14 @@ import time
 import logging
 import pickle
 import re
+
+import json
+from pprint import pprint
+
+data = None
+with open('mapping.json') as f:
+    data = json.load(f)
+
 # Use with Azure Web Apps
 os.environ['PATH'] = r'D:\home\python354x64;' + os.environ['PATH']
 sys.path.append(".")
@@ -75,7 +83,7 @@ def index():
         """
 
 
-@app.route('/endava/api/v1.0/predictall', methods=['POST'])
+@app.route('/api/v1.0/predictall', methods=['POST'])
 def predictall():
     ts = time.gmtime()
     logging.info("Request received - %s" % time.strftime("%Y-%m-%d %H:%M:%S", ts))
@@ -112,16 +120,16 @@ def predictall():
     )
     return jsonify({
         "description": description,
-        "ticket_type": predicted_ticket_type,
+        "ticket_type": data["map"]["ticket"][predicted_ticket_type],
         # "business_service": predicted_business_service,
-        "category": predicted_category,
+        "category": data["map"]["category"][predicted_category],
         "impact": predicted_impact,
         "urgency": predicted_urgency,
-        "sub_category1": predicted_sub_category1
+        "sub_category1": data["map"]["subcategory"][predicted_category]["subcategory"][predicted_sub_category1]
     })
 
 
-@app.route('/endava/api/v1.0/category', methods=['POST'])
+@app.route('/v1/predict', methods=['POST'])
 def category1():
     ts = time.gmtime()
     logging.info("Request received - %s" % time.strftime("%Y-%m-%d %H:%M:%S", ts))

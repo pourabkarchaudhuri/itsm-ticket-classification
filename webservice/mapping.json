@@ -1,0 +1,32 @@
+{
+  "map":{
+    "ticket":{
+      "0":"Incident",
+      "1":"Service"
+    },
+    "category":{
+      "1": "STG",
+      "2": "ISG",
+      "3": "HR"
+    },
+    "subcategory": {
+      "1": {
+        "subcategory": {
+          "1": "Laptop/Desktop Services",
+          "2": "Internet Services"
+        }
+      },
+      "2": {
+        "subcategory": {
+          "1": "Sharepoint",
+          "2": "Application Issue"
+        }
+      },
+      "3": {
+        "subcategory" : {
+          "1": "Business Issue"
+        }
+      }
+    }
+  }
+}
