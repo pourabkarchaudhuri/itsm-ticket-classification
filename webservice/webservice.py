@@ -90,7 +90,7 @@ def predictall():
     if (not request.json) or ('description' not in request.json):
         abort(400)
     description = request.json['description']
-    description = preprocess_data(description)
+    # description = preprocess_data(description)
     
     predicted_ticket_type = model_ticket_type.predict([description])[0]
     print("predicted ticket_type: "+str(predicted_ticket_type))
